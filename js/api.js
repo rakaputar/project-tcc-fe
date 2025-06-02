@@ -1,4 +1,4 @@
-const API_URL = "https://project-backend-617681911777.europe-west1.run.app";
+const API_URL = "https://smartphone-backend-617681911777.us-central1.run.app/api";
 
 const getAccessToken = () => localStorage.getItem("accessToken");
 const getRefreshToken = () => localStorage.getItem("refreshToken");
