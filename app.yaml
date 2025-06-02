@@ -1,2 +1,11 @@
-runtime: nodejs20
-service: default
+runtime: python39
+service: fe-static
+entrypoint: serve index.html
+
+handlers:
+  - url: /
+    static_files: index.html
+    upload: index.html
+  - url: /(.*)
+    static_files: \1
+    upload: (.*)
