@@ -1,10 +1,2 @@
-# app.yaml for Frontend
-runtime: nodejs14
-
-instance_class: F2
-
-env: standard
-
-handlers:
-  - url: /.*
-    script: auto
+runtime: nodejs20
+service: default
